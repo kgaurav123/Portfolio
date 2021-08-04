@@ -6,7 +6,7 @@ import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
+
 import {
     AiFillStar,
     AiOutlineHome,
@@ -72,7 +72,7 @@ function NavBar() {
                         <Nav.Item>
                             <Nav.Link
                                 as={Link}
-                                to="/project"
+                                to="/projects"
                                 onClick={() => updateExpanded(false)}
                             >
                                 <AiOutlineFundProjectionScreen
@@ -92,19 +92,10 @@ function NavBar() {
                             </Nav.Link>
                         </Nav.Item>
 
-                        <Nav.Item>
-                            <Nav.Link
-                                href=""
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
-                            </Nav.Link>
-                        </Nav.Item>
 
                         <Nav.Item className="fork-btn">
                             <Button
-                                href=""
+                                href="https://github.com/kgaurav123/Portfolio"
                                 target="_blank"
                                 className="fork-btn-inner"
                             >
